@@ -16,7 +16,6 @@ p {
         display: grid;
         font-size: 0;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
         margin-top: 10px;
         grid-gap: 20px 22px;
         justify-content: center;
@@ -26,26 +25,37 @@ p {
         padding: 0 25px;
         width: 100%;
         transition: box-shadow 0.3s ease;
-        width: fit-content;
+        width: 100%;
         border-radius: 18px;
+        justify-items: center; /* centers the cards in each grid cell */
+    text-align: center; 
         }
+        @media (max-width: 900px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* 1 column for small screens */
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: 1fr;
+    }}
 .game:hover {
     border-radius: 18px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.18), 0 1.5px 4px rgba(0,0,0,0.12);
             transform: scale(1.05);
 }
-#game_1, #game_2 {
-    overflow: hidden;
+.link-img {
     width: 285px;
     height: 105px;
     object-fit: cover;
-    border-radius:18px ;
+    border-radius: 18px;
 }
 
 .footer {
     text-align: center;
     font-size: 0.9em;
-    padding: 10px 5px;
+    padding: 20px 5px;
 
   }
 .footer a {
@@ -54,3 +64,4 @@ p {
 
 
 }
+
