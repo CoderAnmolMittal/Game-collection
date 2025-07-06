@@ -1,6 +1,6 @@
 # 🎮 Game Collection by Anmol
 
-Welcome to **Fun Games** – a minimal and fun browser-based game collection built using HTML, CSS, and JavaScript.
+Welcome to **PlayBox** – a minimal and fun browser-based game collection built using HTML, CSS, and JavaScript.
 
 🌐 **Live Website:** [https://gamesbyanmol.netlify.app](https://gamesbyanmol.netlify.app)
 
